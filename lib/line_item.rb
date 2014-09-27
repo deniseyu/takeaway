@@ -8,5 +8,4 @@ class LineItem
 		@menu.items[item] * quantity
 	end
 
-
 end

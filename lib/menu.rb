@@ -1,16 +1,18 @@
 class Menu 
 
-	attr_reader :items 
+	attr_reader :items
 
 	def initialize
-		@items = { 	"burger" => 5, 
-					"cheeseburger" => 6,
-					"fries" => 3,
-					"cheese fries" => 4,
-					"salad" => 3, 
-					"veggie burger" => 5 }
+		@items = { 	"krabby patty" => 1.25, 
+					"double krabby patty" => 2.00,
+					"triple krabby patty" => 3.00,
+					"salty sea dog" => 1.25,
+					"kelp rings" => 1.50, 
+					"coral bits" => 1.00,
+					"kelp shake" => 2.00,
+					"sailors surprise" => 3.00 }
 	end
-	
+
 end
 
 
