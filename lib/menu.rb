@@ -10,15 +10,7 @@ class Menu
 					"salad" => 3, 
 					"veggie burger" => 5 }
 	end
-
-	def add_new(item, price)
-		@items["item"]
-
-	end
-
-
-
-
+	
 end
 
 

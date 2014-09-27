@@ -7,7 +7,7 @@ class Takeaway
 	end
 
 	def show_whole_menu
-		@menu.items.each { |key, value| puts "#{key}, $#{value}"}
+		@menu.items.each { |key, value| return "#{key}, $#{value}"}
 	end
 
 	def show_menu(item)
