@@ -1,13 +1,14 @@
 require 'line_item'
 require 'menu'
 
-let(:line_item) { LineItem.new }
-
-
 describe LineItem do 
 
-	it "should compute the cost of three burgers" do 
-		expect(subtotal(burger, 3)).to eq 15
+	let(:line_item) { LineItem.new }
+
+	it "should compute the cost of three krabby patties" do 
+		expect(line_item.subtotal("krabby patty", 3)).to eq 3.75
 	end
+
+
 	
 end

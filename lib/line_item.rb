@@ -1,12 +1,12 @@
 class LineItem
 
 	def initialize
-		@item = item
-		@price = price
+		@menu = Menu.new
 	end
 
 	def subtotal(item, quantity)
-		return price * quantity
+		@menu.items[item] * quantity
 	end
-	
+
+
 end
