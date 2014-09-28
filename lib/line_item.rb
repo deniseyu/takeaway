@@ -1,11 +1,23 @@
 class LineItem
 
-	def initialize
+	attr_reader :item, :quantity
+
+	def initialize(item = nil, quantity = nil)
+		@item = item
+		@quantity = quantity
 		@menu = Menu.new
 	end
 
+	def cost(item)
+		@menu.items[item]
+	end
+
 	def subtotal(item, quantity)
-		@menu.items[item] * quantity
+		cost(item) * quantity
+	end
+
+	def view(item, quantity)
+		"#{item}, #{cost(item)}, #{quantity}"
 	end
 
 end

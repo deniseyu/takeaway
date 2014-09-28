@@ -10,9 +10,4 @@ class Takeaway
 		@menu.items.each { |key, value| return "#{key}, $#{value}"}
 	end
 
-	def show_menu(item)
-		cost = @menu.items[item]
-		return "#{item}, $#{cost}"
-	end
-
 end
