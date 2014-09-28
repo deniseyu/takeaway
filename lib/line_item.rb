@@ -3,8 +3,6 @@ class LineItem
 	attr_reader :item, :quantity
 
 	def initialize(item = nil, quantity = nil)
-		@item = item
-		@quantity = quantity
 		@menu = Menu.new
 	end
 

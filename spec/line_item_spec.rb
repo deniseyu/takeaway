@@ -13,16 +13,8 @@ describe LineItem do
 		expect(line_item.subtotal("krabby patty", 3)).to eq 3.75
 	end
 
-	it "should compute the cost of five kelp shakes" do
-		expect(line_item.subtotal("kelp shake", 5)).to eq 10.00
-	end
-
 	it "should show me the item, cost, and quantity" do 
 		expect(line_item.view("krabby patty", 2)).to eq "krabby patty, 1.25, 2"
-	end
-
-	it "should show the item name" do 
-		expect(LineItem.new("krabby patty").item).to eq "krabby patty"
 	end
 	
 end
