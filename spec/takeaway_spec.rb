@@ -1,12 +1,16 @@
 require 'takeaway'
 require 'menu'
+require 'order'
+require 'line_item'
 
 describe Takeaway do 
 
 	let(:takeaway) { Takeaway.new }
 
-	# it "should be able to view the whole menu" do 
-	# 	expect(takeaway.show_whole_menu).to include "krabby patty, $1.25"
-	# end
+	it "should send a confirmation message with estimated delivery time" do
+		line_item = LineItem.new
+		takeaway.order.add(line_item.subtotal("krabby patty", 2))
+		expect(takeaway.message).to eq "Thank you! Your order of $2.5 was placed and will be delivered before #{takeaway.one_hour_from_now}."
+	end
 
 end
