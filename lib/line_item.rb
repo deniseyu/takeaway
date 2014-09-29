@@ -15,7 +15,7 @@ class LineItem
 	end
 
 	def view(item, quantity)
-		"#{item}, #{cost(item)}, #{quantity}"
+		"#{item}, $#{cost(item)}, #{quantity}"
 	end
 
 end

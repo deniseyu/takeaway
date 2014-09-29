@@ -14,7 +14,7 @@ describe LineItem do
 	end
 
 	it "should show me the item, cost, and quantity" do 
-		expect(line_item.view("krabby patty", 2)).to eq "krabby patty, 1.25, 2"
+		expect(line_item.view("krabby patty", 2)).to eq "krabby patty, $1.25, 2"
 	end
 	
 end
