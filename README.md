@@ -25,9 +25,10 @@ git clone git@github.com:deniseyu/takeaway.git
 cd takeaway
 bundle install
 ```
-Create a developer account on [Twilio](http://www.twilio.com) to get an account SID and auth token. In command line, configure the SID, auth token, and your mobile number as environment variables (without curly braces):
+Create a developer account on [Twilio](http://www.twilio.com) to get an authentication credentials. In command line, configure the SID, auth token, your Twilio number, and your mobile number as environment variables (without curly braces):
 ```
 export MY_NUMBER={your number goes here}
+export TWILIO_NUMBER={your number assigned by Twilio}
 export TWILIO_ACCOUNT_SID={your SID}
 export TWILIO_AUTH_TOKEN={your auth token}
 ```

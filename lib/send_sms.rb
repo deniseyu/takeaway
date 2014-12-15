@@ -12,7 +12,7 @@ class Message
 
     message = @client.account.messages.create(:body => "Your order was received and will be delivered before #{one_hour_from_now}",
         :to => ENV['MY_NUMBER'],
-        :from => "+441359366037")
+        :from => ENV['TWILIO_NUMBER'])
   end
 
 end
